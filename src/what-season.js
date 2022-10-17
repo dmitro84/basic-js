@@ -17,11 +17,6 @@ function getSeason(date) {
     return 'Unable to determine the time of year!';
   }
 
-  if(date === typeof 'object'){
-    throw new Error('Invalid date!');
-  }
-
-
   if(!(date instanceof Date )) {
     throw new Error('Invalid date!');
   } 
