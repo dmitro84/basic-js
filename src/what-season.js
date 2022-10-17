@@ -26,6 +26,10 @@ function getSeason(date) {
     throw new Error('Invalid date!');
   } 
 
+  if (Object.getOwnPropertyNames(date).length > 0) {
+    throw Error('Invalid date!');
+  }
+
 
   const month = date.getMonth();
 
